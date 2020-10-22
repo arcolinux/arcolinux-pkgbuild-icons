@@ -6,24 +6,28 @@ destination2=$HOME"/ARCO/ARCOLINUX-REPO/arcolinux_repo_3party/x86_64/"
 destination3=$HOME"/ARCO/ARCOLINUX-REPO/arcolinux_repo_iso/x86_64/"
 destination4=$HOME"/ARCO/ARCOLINUX-REPO/arcolinux_repo_testing/x86_64/"
 destination5=$HOME"/ARCO/ARCOLINUX-REPO/arcolinux_repo_xlarge/x86_64/"
+destination6=$HOME"/ARCO/TEST"
+destination7=$HOME"/ARCO/ARCOLINUX-ARCHIVE/packages"
 
 destiny=$destination2
 
 # 2. makepkg"
 # 1. chroot"
 
-CHOICE=1
+CHOICE=2
 pwdpath=$(echo $PWD)
 pwd=$(basename "$PWD")
 
+#which packages are always going to build with makepkg or choice 2
 makepkglist=""
+
 for i in $makepkglist
 do
   if [[ "$pwd" == "$i" ]] ; then
   CHOICE=2
   fi
 done
-
+search=""
 search1=$(basename "$PWD")
 search2=arcolinux
 
@@ -65,15 +69,30 @@ fi
 
 echo "Moving created files to " $destiny
 echo "#############################################################################################"
-mv $search*pkg.tar.zst $destiny
-mv $search*pkg.tar.zst.sig $destiny
+cp $search*pkg.tar.zst $destiny
+cp $search*pkg.tar.zst.sig $destiny
 
 #take special care to special packages
 if [[ $search == "perl-checkupdates-aur" ]]; then
-  mv checkupdates*pkg.tar.zst $destiny
-  mv checkupdates*pkg.tar.zst.sig $destiny
+  cp checkupdates*pkg.tar.zst $destiny
+  cp checkupdates*pkg.tar.zst.sig $destiny
 fi
 
+
+firstLetter="$(echo $search | head -c 1)"
+
+echo "Moving created files to " $destination7/$firstLetter/$search1
+echo "#############################################################################################"
+
+[ -d $destination7/$firstLetter ] && echo "Directory " $firstLetter " exists" || mkdir $destination7/$firstLetter
+[ -d "$destination7/$firstLetter/$search1" ] && echo "Directory " $search1 " exists" || mkdir "$destination7/$firstLetter/$search1"
+
+
+  mv $search*pkg.tar.zst "$destination7/$firstLetter/$search1"
+  mv $search*pkg.tar.zst.sig "$destination7/$firstLetter/$search1"
+
+
+echo "#############################################################################################"
 echo "Cleaning up"
 echo "#############################################################################################"
 echo "deleting unnecessary folders"
