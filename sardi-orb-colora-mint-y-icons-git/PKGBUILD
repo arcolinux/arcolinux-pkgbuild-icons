@@ -3,7 +3,7 @@
 pkgname=sardi-orb-colora-mint-y-icons-git
 _pkgname=sardi-orb-colora-mint-y-icons
 pkgver=20.12
-pkgrel=1
+pkgrel=7
 pkgdesc="New icons from LinuxMint 18 inspired by the Moka icon set with Sardi-Orb-Colora as main icon set"
 arch=('any')
 url="https://github.com/linuxmint/mint-y-icons"

@@ -1,15 +1,15 @@
 # Maintainer: Erik Dubois <erik.dubois@gmail.com>
-pkgname=surfn-icons-git
+pkgname=surfn-plasma-light-icons-git
 pkgver=20.12
-pkgrel=7
+pkgrel=1
 _destname="/usr/share/icons/"
-pkgdesc="Surfn is a colourful icon theme."
+pkgdesc="Surfn Plasma Light is created to go with Breeze"
 arch=('any')
-url="https://github.com/erikdubois/Surfn"
+url="https://github.com/erikdubois/surfn-plasma-light"
 license=('Attribution-NonCommercial-ShareAlike 4.0 International Public License')
 makedepends=('git')
 options=(!strip !emptydirs)
-source=('Surfn::git+https://github.com/erikdubois/Surfn.git')
+source=('Surfn::git+https://github.com/erikdubois/surfn-plasma-light.git')
 sha256sums=('SKIP')
 
 package() {

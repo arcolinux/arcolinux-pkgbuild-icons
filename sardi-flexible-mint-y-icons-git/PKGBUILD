@@ -3,7 +3,7 @@
 pkgname=sardi-flexible-mint-y-icons-git
 _pkgname=sardi-flexible-mint-y-icons
 pkgver=20.12
-pkgrel=1
+pkgrel=7
 pkgdesc="New icons from LinuxMint 18 inspired by the Moka icon set with Sardi-Flexible as main icon set"
 arch=('any')
 url="https://github.com/linuxmint/mint-y-icons"
