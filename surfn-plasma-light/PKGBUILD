@@ -1,7 +1,7 @@
 # Maintainer: Erik Dubois <erik.dubois@gmail.com>
 pkgname=surfn-plasma-light-icons-git
 pkgver=21.01
-pkgrel=1
+pkgrel=3
 _destname1="/usr/share/icons/Surfn-Plasma-Light/"
 _destname2="/usr/share/plasma/look-and-feel/org.kde.breeze-arcolinux.desktop/"
 pkgdesc="Surfn Plasma Light is created to go with Breeze"
@@ -9,6 +9,7 @@ arch=('any')
 url="https://github.com/erikdubois/surfn-plasma-light"
 license=('Attribution-NonCommercial-ShareAlike 4.0 International Public License')
 makedepends=('git')
+depends=("breeze-icons")
 source=('Surfn::git+https://github.com/erikdubois/surfn-plasma-light.git')
 sha256sums=('SKIP')
 
