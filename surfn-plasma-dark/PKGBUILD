@@ -1,7 +1,7 @@
 # Maintainer: Erik Dubois <erik.dubois@gmail.com>
 pkgname=surfn-plasma-dark-icons-git
 pkgver=21.01
-pkgrel=6
+pkgrel=8
 _destname1="/usr/share/icons/Surfn-Plasma-Dark/"
 _destname2="/usr/share/plasma/look-and-feel/org.kde.breezedark-arcolinux.desktop/"
 pkgdesc="Surfn Plasma Dark is created to go with Breeze Dark"
