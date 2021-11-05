@@ -21,6 +21,9 @@ count=0
 
 for name in $(ls -d */); do
 		count=$[count+1]
+		echo
+		echo $count
+		echo
 		cd $name
 		./build*
 		echo "#############################################################################################"
