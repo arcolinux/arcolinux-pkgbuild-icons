@@ -1,7 +1,7 @@
 # Maintainer: Erik Dubois <erik.dubois@gmail.com>
 pkgname=surfn-plasma-light-icons-git
-pkgver=21.10
-pkgrel=03
+pkgver=21.11
+pkgrel=01
 _destname1="/usr/share/icons/Surfn-Plasma-Light/"
 _destname2="/usr/share/plasma/look-and-feel/"
 pkgdesc="Surfn Plasma Light is created to go with Breeze"

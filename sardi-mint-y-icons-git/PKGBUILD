@@ -5,8 +5,8 @@
 pkgname=sardi-mint-y-icons-git
 _pkgname=sardi-mint-y-icons
 _destname="/usr/share/icons/"
-pkgver=21.10
-pkgrel=03
+pkgver=21.11
+pkgrel=01
 pkgdesc="New icons from LinuxMint 18 inspired by the Moka icon set with Sardi as main icon set"
 arch=('any')
 url="https://github.com/arcolinux/arcolinux-mint-y-icons"
