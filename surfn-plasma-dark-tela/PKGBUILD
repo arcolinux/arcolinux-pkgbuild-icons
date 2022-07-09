@@ -1,16 +1,16 @@
 # Maintainer: Erik Dubois <erik.dubois@gmail.com>
-pkgname=surfn-plasma-light-icons-git
+pkgname=surfn-plasma-dark-tela-icons-git
 pkgver=22.07
 pkgrel=01
-_destname1="/usr/share/icons/Surfn-Plasma-Light/"
+_destname1="/usr/share/icons/Surfn-Plasma-Dark-Tela/"
 _destname2="/usr/share/plasma/look-and-feel/"
-pkgdesc="Surfn Plasma Light is created to go with Breeze"
+pkgdesc="Surfn Plasma Dark Tela is created to go with Plasma"
 arch=('any')
-url="https://github.com/erikdubois/surfn-plasma-light"
+url="https://github.com/erikdubois/surfn-plasma-dark-tela"
 license=('Attribution-NonCommercial-ShareAlike 4.0 International Public License')
 makedepends=('git')
-depends=("breeze-icons")
-source=('Surfn::git+https://github.com/erikdubois/surfn-plasma-light.git')
+depends=("surfn-plasma-dark-icons-git" "breeze-icons")
+source=('Surfn::git+https://github.com/erikdubois/surfn-plasma-dark-tela.git')
 sha256sums=('SKIP')
 
 package() {

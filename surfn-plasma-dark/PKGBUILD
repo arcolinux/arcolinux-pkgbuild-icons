@@ -1,10 +1,10 @@
 # Maintainer: Erik Dubois <erik.dubois@gmail.com>
 pkgname=surfn-plasma-dark-icons-git
-pkgver=22.03
+pkgver=22.07
 pkgrel=01
 _destname1="/usr/share/icons/Surfn-Plasma-Dark/"
 _destname2="/usr/share/plasma/look-and-feel/"
-pkgdesc="Surfn Plasma Dark is created to go with Breeze Dark"
+pkgdesc="Surfn Plasma Dark is created to go with Plasma"
 arch=('any')
 url="https://github.com/erikdubois/surfn-plasma-dark"
 license=('Attribution-NonCommercial-ShareAlike 4.0 International Public License')

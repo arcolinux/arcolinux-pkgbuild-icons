@@ -17,7 +17,7 @@ echo "Scans the existing folders"
 echo "Be sure you have the highest number for all of them"
 echo
 echo "#############################################################################################"
-echo "Give the pkgversion number like 22.07"
+echo "Give the pkgversion number like 22.04"
 echo "#############################################################################################"
 
 read pkgver
@@ -45,7 +45,7 @@ if [[ "$response" == [yY] ]]; then
 
 		count=0
 
-		for name in $(ls -d */); do
+		for name in $(ls -d surfn*/); do
 			count=$[count+1]
 			cd $name
 			tput setaf 1;echo $name;echo "Github "$count;tput sgr0;
