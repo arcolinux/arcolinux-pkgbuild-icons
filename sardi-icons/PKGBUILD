@@ -1,7 +1,7 @@
 # Maintainer: Erik Dubois <erik.dubois@gmail.com>
 pkgname=sardi-icons
-pkgver=22.07
-pkgrel=01
+pkgver=23.04
+pkgrel=02
 _destname="/usr/share/icons/"
 pkgdesc="Sardi is an icon collection for any linux distro with 6 different circular icons and 10 different kind of folders. "
 arch=('any')
@@ -10,7 +10,7 @@ license=('Attribution-NonCommercial-ShareAlike 4.0 International Public License'
 makedepends=('git')
 provides=("${pkgname}")
 conflicts=("${pkgname}")
-options=(!strip !emptydirs)
+options=()
 source=(sardi-icons::"http://downloads.sourceforge.net/project/sardi/${pkgname}-${pkgver}-${pkgrel}.tar.gz")
 sha256sums=('SKIP')
 package() {

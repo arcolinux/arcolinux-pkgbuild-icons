@@ -64,7 +64,7 @@ else
   echo "#########        Let us build the package with MAKEPKG "$(basename `pwd`)
   echo "#############################################################################################"
   tput sgr0
-  makepkg --sign
+  makepkg -s --sign
 fi
 
 echo "Moving created files to " $destiny
