@@ -1,6 +1,6 @@
 # Maintainer: Erik Dubois <erik.dubois@gmail.com>
 pkgname=surfn-plasma-dark-tela-icons-git
-pkgver=23.04
+pkgver=23.06
 pkgrel=01
 _destname1="/usr/share/icons/Surfn-Plasma-Dark-Tela/"
 _destname2="/usr/share/plasma/look-and-feel/"
