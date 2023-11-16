@@ -1,6 +1,6 @@
 # Maintainer: Erik Dubois <erik.dubois@gmail.com>
 pkgname=surfn-plasma-dark-icons-git
-pkgver=23.06
+pkgver=23.11
 pkgrel=01
 _destname1="/usr/share/icons/Surfn-Plasma-Dark/"
 _destname2="/usr/share/plasma/look-and-feel/"
