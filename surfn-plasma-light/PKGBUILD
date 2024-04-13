@@ -1,15 +1,16 @@
 # Maintainer: Erik Dubois <erik.dubois@gmail.com>
 pkgname=surfn-plasma-light-icons-git
-pkgver=23.12
-pkgrel=07
-_destname1="/usr/share/icons/Surfn-Plasma-Light/"
-_destname2="/usr/share/plasma/look-and-feel/"
-pkgdesc="Surfn Plasma Light is created to go with Breeze"
+pkgver=24.03
+pkgrel=23
+_destname1="/usr/share/icons/"
+#_destname2="/usr/share/plasma/look-and-feel/"
+pkgdesc="Surfn Plasma Light is created to go with Plasma"
 arch=('any')
 url="https://github.com/erikdubois/surfn-plasma-light"
 license=('Attribution-NonCommercial-ShareAlike 4.0 International Public License')
 makedepends=('git')
-depends=("breeze-icons")
+replaces=()
+depends=()
 source=('Surfn::git+https://github.com/erikdubois/surfn-plasma-light.git')
 sha256sums=('SKIP')
 
@@ -17,6 +18,6 @@ package() {
   install -dm 755 ${pkgdir}${_destname1}
   cp -r ${srcdir}/Surfn/${_destname1}* ${pkgdir}${_destname1}
 
-  install -dm 755 ${pkgdir}${_destname2}
-  cp -r ${srcdir}/Surfn/${_destname2}* ${pkgdir}${_destname2}
+  #install -dm 755 ${pkgdir}${_destname2}
+  #cp -r ${srcdir}/Surfn/${_destname2}* ${pkgdir}${_destname2}
 }
